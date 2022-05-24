@@ -1,6 +1,6 @@
-AutoRespawn = false --True == auto respawn cars that are outside into your garage on script restart, false == does not put them into your garage and players have to go to the impound
+AutoRespawn = true --True == auto respawn cars that are outside into your garage on script restart, false == does not put them into your garage and players have to go to the impound
 SharedGarages = false   --True == Gang and job garages are shared, false == Gang and Job garages are personal
-VisuallyDamageCars = true --True == Visually damage cars that go out of the garage depending of body damage, false == Do not visually damage cars (damage is still applied to car values)
+VisuallyDamageCars = false --True == Visually damage cars that go out of the garage depending of body damage, false == Do not visually damage cars (damage is still applied to car values)
 
 Garages = {
     ["motelgarage"] = {
@@ -24,6 +24,17 @@ Garages = {
         blipNumber = 357,
         type = 'public',                --public, job, gang, depot
         vehicle = 'car'                 --car, air, sea
+    },
+    ["neighborhood"] = {
+        label = "Neighborhood Parking",
+        takeVehicle = vector3(1375.41, -738.51, 67.236),
+        spawnPoint = vector4(1375.41, -738.51, 67.23, 137.5),
+        putVehicle = vector3(1375.41, -738.51, 67.23),
+        showBlip = true,
+        blipName = "Public Parking",
+        blipNumber = 357,
+        type = 'public',                --public, job, gang, depot
+        vehicle = 'car'
     },
     ["spanishave"] = {
         label = "Spanish Ave Parking",
@@ -177,6 +188,139 @@ Garages = {
         type = 'depot',                --public, job, gang, depot
         vehicle = 'car'                 --car, air, sea
     },
+    -- cardealer garages
+    ["luxgarage"] = {
+        label = "Lux Garage",
+        takeVehicle = vector3(-773.13, -234.36, 37.15),
+        spawnPoint = vector4(-769.01,-244.46,37.24,197.79),
+        putVehicle = vector3(-773.13, -234.36, 37.15),
+        showBlip = false,
+        blipName = "Public Parking",
+        blipNumber = 357,
+        type = 'public',                --public, job, gang, depot
+        vehicle = 'car' 
+    },
+    ["pdmgarage"] = {
+        label = "PDM Garage",
+        takeVehicle = vector3(-23.26, -1094.43, 27.31),
+        spawnPoint = vector4(-23.43, -1094.16, 27.31, 341.43),
+        putVehicle = vector3(-23.26, -1094.43, 27.31),
+        showBlip = false,
+        blipName = "Public Parking",
+        blipNumber = 357,
+        type = 'public',                --public, job, gang, depot
+        vehicle = 'car' 
+    },
+    ["bassgarage"] = {
+        label = "Bass Pro Garage",
+        takeVehicle = vector3(-773.79, -1326.39, 5.15),
+        spawnPoint = vector4(-765.84, -1325.31, 5.0-1.03, 135.11),
+        putVehicle = vector3(-765.84, -1325.31, 5.0),
+        showBlip = false,
+        blipName = "Public Parking",
+        blipNumber = 357,
+        type = 'public',                --public, job, gang, depot
+        vehicle = 'car' 
+    },
+    ["legiongarage"] = {
+        label = "Legion Garage",
+        takeVehicle = vector3(101.4,-1070.89,29.24),
+        spawnPoint = vector4(128.92, -1070.24, 29.19, 356.00),
+        putVehicle = vector3(138.92, -1070.33, 29.19),
+        showBlip = true,
+        blipName = "Public Parking",
+        blipNumber = 357,
+        type = 'public',                --public, job, gang, depot
+        vehicle = 'car' 
+    },
+    ["hekticgarage"] = {
+        label = "Hektic Garage",
+        takeVehicle = vector3(-345.67, -132.68, 39.01),
+        spawnPoint = vector4(-349.39, -131.41, 38.65, 249.84),
+        putVehicle = vector3(-349.39, -131.41, 38.65),
+        showBlip = false,
+        blipName = "Hektic Garage",
+        blipNumber = 357,
+        type = 'public',                --public, job, gang, depot
+        vehicle = 'car' 
+    },
+    ["redlinegarage"] = {
+        label = "RedLine Garage",
+        takeVehicle = vector3(-560.64, -917.29, 23.89),
+        spawnPoint = vector4(-571.86, -915.27, 23.43, 181.27),
+        putVehicle = vector3(-560.2, -914.48, 23.89),
+        showBlip = false,
+        blipName = "RedLine Garage",
+        blipNumber = 357,
+        type = 'public',                --public, job, gang, depot
+        vehicle = 'car' 
+    },
+    ["bennysgarage"] = {
+        label = "Benny's Garage",
+        takeVehicle = vector3(-30.53, -1022.82, 28.83),
+        spawnPoint = vector4(-37.05, -1015.44, 28.51, 70.98),
+        putVehicle = vector3(-30.05, -1025.74, 28.41),
+        showBlip = false,
+        blipName = "Benny's Garage",
+        blipNumber = 357,
+        type = 'public',                --public, job, gang, depot
+        vehicle = 'car' 
+    },
+    ["sandersgarage"] = {
+        label = "Sanders Garage",
+        takeVehicle = vector3(256.54, -1168.1, 29.32),
+        spawnPoint = vector4(246.77, -1161.71, 29.16, 1.21),
+        putVehicle = vector3(253.29, -1162.55, 29.15),
+        showBlip = false,
+        blipName = "Sanders Garage",
+        blipNumber = 357,
+        type = 'public',                --public, job, gang, depot
+        vehicle = 'car' 
+    },
+    ["yellowjackgarage"] = {
+        label = "Yellow Jack",
+        takeVehicle = vector3(1992.19, 3039.17, 47.03),
+        spawnPoint = vector4(1994.73, 3035.09, 46.59, 149.74),
+        putVehicle = vector3(1995.34, 3036.62, 46.59),
+        showBlip = false,
+        blipName = "Yellow Jack",
+        blipNumber = 357,
+        type = 'public',                --public, job, gang, depot
+        vehicle = 'car' 
+    },
+    ["lafuenteblanca"] = {
+        label = "La Fuente Blanca",
+        takeVehicle = vector3(1401.46, 1109.52, 114.83),
+        spawnPoint = vector4(1401.49, 1110.36, 114.42, 358.53),
+        putVehicle = vector3(1413.49, 1109.51, 114.42),
+        showBlip = false,
+        blipName = "Yellow Jack",
+        blipNumber = 357,
+        type = 'public',                --public, job, gang, depot
+        vehicle = 'car' 
+    },
+    ["casadesinheli"] = {
+        label = "La Fuente Blanca",
+        takeVehicle = vector3(-761.26, 334.69, 244.34),
+        spawnPoint = vector4(-755.72, 340.23, 244.34, 336.9),
+        putVehicle = vector3(-755.72, 340.23, 244.34),
+        showBlip = false,
+        blipName = "Casa de Sin",
+        blipNumber = 357,
+        type = 'public',                --public, job, gang, depot
+        vehicle = 'air'     
+    },
+    ["casadesincar"] = {
+        label = "La Fuente Blanca",
+        takeVehicle = vector3(-777.56, 392.42, 56.0),
+        spawnPoint = vector4(-784.19, 380.35, 55.57, 179.77),
+        putVehicle = vector3(-784.19, 380.35, 55.57),
+        showBlip = false,
+        blipName = "Casa de Sin",
+        blipNumber = 357,
+        type = 'public',                --public, job, gang, depot
+        vehicle = 'car' 
+    },
     ["ballas"] = {
         label = "Ballas",
         takeVehicle = vector3(98.50, -1954.49, 20.84),
@@ -203,9 +347,9 @@ Garages = {
     },
     ["lostmc"] = {
         label = "Lost MC",
-        takeVehicle = vector3(957.25, -129.63, 74.39),
-        spawnPoint = vector4(957.25, -129.63, 74.39, 199.21),
-        putVehicle = vector3(950.47, -122.05, 74.36),
+        takeVehicle = vector3(993.4, -113.58, 74.08),
+        spawnPoint = vector4(989.91, -127.55, 74.06, 58.71),
+        putVehicle = vector3(993.4, -113.58, 74.08),
         showBlip = false,
         blipName = "Lost MC",
         blipNumber = 357,
@@ -215,15 +359,51 @@ Garages = {
     },
     ["cartel"] = {
         label = "Cartel",
-        takeVehicle = vector3(1407.18, 1118.04, 114.84),
-        spawnPoint = vector4(1407.18, 1118.04, 114.84, 88.34),
-        putVehicle = vector3(1407.18, 1118.04, 114.84),
+        takeVehicle = vector3(379.81, -5.08, 82.98),
+        spawnPoint = vector4(361.02, -13.55, 83.0, 310.44),
+        putVehicle = vector3(372.34, -12.2, 82.99),
         showBlip = false,
         blipName = "Cartel",
         blipNumber = 357,
         type = 'gang',                --public, job, gang, depot
         vehicle = 'car',              --car, air, sea
         job = "cartel"
+    },
+    ["triadsgarage"] = {
+        label = "triads",
+        takeVehicle = vector3(-483.8, 28.81, 52.41),
+        spawnPoint = vector4(-477.48, 39.89, 52.61, 39.25),
+        putVehicle = vector3(-489.45, 31.18, 52.41),
+        showBlip = false,
+        blipName = "triads",
+        blipNumber = 357,
+        type = 'public',                --public, job, gang, depot
+        vehicle = 'car',              --car, air, sea
+        job = "triads"
+    }, 
+    ["bloodsgarage"] = {
+        label = "Bloods Garage",
+        takeVehicle = vector3(-1566.77, -388.98, 41.98),
+        spawnPoint = vector4(-1561.39, -384.98, 41.98, 223.06),
+        putVehicle = vector3(-1566.77, -388.98, 41.98),
+        showBlip = false,
+        blipName = "bloods",
+        blipNumber = 357,
+        type = 'public',                --public, job, gang, depot
+        vehicle = 'car',              --car, air, sea
+        job = "bloods"
+    },
+    ["angelsmcgarage"] = {
+        label = "Fallen MC",
+        takeVehicle = vector3(1955.95, 3828.1, 32.16),
+        spawnPoint = vector4(1946.68, 3823.2, 32.0, 27.61),
+        putVehicle = vector3(1955.95, 3828.1, 32.16),
+        showBlip = false,
+        blipName = "angels",
+        blipNumber = 357,
+        type = 'public',                --public, job, gang, depot
+        vehicle = 'car',              --car, air, sea
+        job = "angels"
     },
     ["police"] = {
         label = "Police",
@@ -237,6 +417,45 @@ Garages = {
         vehicle = 'car',              --car, air, sea
         job = "police"
     },
+    ["turbotaxigarage"] = {
+        label = "Turbo Taxi",
+        takeVehicle = vector3(903.26, -172.79, 74.08),
+        spawnPoint = vector4(908.28, -176.72, 74.17, 238.75),
+        putVehicle = vector3(899.16, -180.52, 73.83),
+        showBlip = false,
+        blipName = "Turbo Taxi",
+        blipNumber = 357,
+        type = 'public',                --public, job, gang, depot
+        vehicle = 'car',
+        job = "turbotaxi"
+    },
+    ["hookertowinggarage"] = {
+        label = "Hooker Towing",
+        takeVehicle = vector3(-131.87, -1178.75, 23.77),
+        spawnPoint = vector4(-142.6, -1171.14, 23.77, 176.36),
+        putVehicle = vector3(-131.87, -1178.75, 23.77),
+        showBlip = false,
+        blipName = "Hooker Towing",
+        blipNumber = 357,
+        type = 'public',                --public, job, gang, depot
+        vehicle = 'car',
+        job = "tow"
+    },
+-- Personal Garages
+    ["casadesincar"] = {
+        label = "La Fuente Blanca",
+        takeVehicle = vector3(-777.56, 392.42, 56.0),
+        spawnPoint = vector4(-784.19, 380.35, 55.57, 179.77),
+        putVehicle = vector3(-784.19, 380.35, 55.57),
+        showBlip = false,
+        blipName = "Casa de Sin Garage",
+        blipNumber = 357,
+        type = 'public',                --public, job, gang, depot
+        vehicle = 'car',
+    },
+
+    -- Aircraft Garages
+
     ["intairport"] = {
         label = "Airport Hangar",
         takeVehicle = vector3(-1025.92, -3017.86, 13.95),
@@ -324,5 +543,40 @@ Garages = {
         type = 'depot',                --public, job, gang, depot
         vehicle = 'sea'                 --car, air, sea
     },
+
+    -- Depots    
+    ["hayesdepot"] = {
+        label = "Hooker Depot City",
+        takeVehicle = vector3(-208.99, -1168.91, 23.04),
+        spawnPoint = vector4(-208.99, -1168.87, 23.04, 94.34),
+        putVehicle = vector3(-208.99, -1168.87, 23.04),
+        showBlip = true,
+        blipName = "Los Santos Depot",
+        blipNumber = 68,
+        type = 'depot',                --public, job, gang, depot
+        vehicle = 'car'                 --car, air, sea
+    },
+    ["hayesdepot2"] = {
+        label = "Hooker Depot Sandy",
+        takeVehicle = vector3(1763.66, 3309.11, 41.16),
+        spawnPoint = vector4(1763.58, 3309.04, 41.16, 247.02),
+        putVehicle = vector3(1763.58, 3309.04, 41.16),
+        showBlip = true,
+        blipName = "Sandy Depot",
+        blipNumber = 68,
+        type = 'depot',                --public, job, gang, depot
+        vehicle = 'car'                 --car, air, sea
+    },
+    ["hayesdepot3"] = {
+        label = "Hooker Depot Paleto",
+        takeVehicle = vector3(123.72, 6608.35, 31.89),
+        spawnPoint = vector4(123.76, 6608.33, 31.89, 224.97),
+        putVehicle = vector3(123.76, 6608.33, 31.89),
+        showBlip = true,
+        blipName = "Paleto Depot",
+        blipNumber = 68,
+        type = 'depot',                --public, job, gang, depot
+        vehicle = 'car'                 --car, air, sea
+    }
 }
 HouseGarages = {}
